@@ -218,7 +218,7 @@ double uptime(){
 #if WANT_VFS
         int exploitstatus = vfs_sploit();
 #else /* !WANT_VFS */
-        int exploitstatus = multi_path_go();
+        int exploitstatus = vfs_sploit(); //Replace with MPTCP if you have a dev account to sign w/ the entitlement.
 #endif /* !WANT_VFS */
         
         switch (exploitstatus) {
